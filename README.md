@@ -70,3 +70,28 @@ True
 ```
 $ sudo pip3 install face_recognition
 ```
+
+# 9. Run script and check GPU offloading thru nvidia-smi
+```
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 470.57.02    Driver Version: 470.57.02    CUDA Version: 11.4     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  Quadro P1000        On   | 00000000:04:00.0 Off |                  N/A |
+| 44%   59C    P0    N/A /  N/A |    393MiB /  4040MiB |     48%      Default |
+|                               |                      |                  N/A |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|    0   N/A  N/A      1113      G   /usr/lib/xorg/Xorg                  4MiB |
+|    0   N/A  N/A      1627      G   /usr/lib/xorg/Xorg                  4MiB |
+|    0   N/A  N/A      9151      C   python3                           380MiB |
++-----------------------------------------------------------------------------+
+```
