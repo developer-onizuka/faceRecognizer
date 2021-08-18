@@ -1,4 +1,4 @@
-# faceRecognizer
+# faceRecognizer with GPU
 
 # 1. Install face_recognition
 ```
