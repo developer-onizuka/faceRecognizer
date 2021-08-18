@@ -71,7 +71,7 @@ True
 $ sudo pip3 install face_recognition
 ```
 
-# 9. Run script and check GPU offloading thru nvidia-smi
+# 9. Run your video streaming app and check GPU offloading thru nvidia-smi!
 ```
 +-----------------------------------------------------------------------------+
 | NVIDIA-SMI 470.57.02    Driver Version: 470.57.02    CUDA Version: 11.4     |
