@@ -17,4 +17,11 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> face_recognition.__version__
 '1.2.3'
 
+$ python3
+Python 3.8.10 (default, Jun  2 2021, 10:49:15) 
+[GCC 9.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import dlib
+>>> dlib.DLIB_USE_CUDA
+False
 ```
