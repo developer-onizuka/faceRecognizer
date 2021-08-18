@@ -56,7 +56,17 @@ $ cd ..
 $ sudo python3 setup.py install --set DLIB_USE_CUDA=1 --set USE_AVX_INSTRUCTIONS=1 --set CUDA_HOST_COMPILER=/usr/bin/gcc-6
 $ pip3 list |grep dlib
 ```
-# 7. Install face_recognition again
+# 7. Check if CUDA suppored again!
+```
+$ python3
+Python 3.8.10 (default, Jun  2 2021, 10:49:15) 
+[GCC 9.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import dlib
+>>> dlib.DLIB_USE_CUDA
+True
+```
+# 8. Install face_recognition again
 ```
 $ sudo pip3 install face_recognition
 ```
