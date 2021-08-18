@@ -24,4 +24,20 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> import dlib
 >>> dlib.DLIB_USE_CUDA
 False
+
+
+$ sudo vi /etc/apt/sources.list
+  # Adding below:
+  deb http://dk.archive.ubuntu.com/ubuntu/ bionic main universe
+
+$ sudo apt-get update
+$ sudo apt-get install gcc-6 g++-6
+
+
+
+
+
+$ cmake .. -DDLIB_USE_CUDA=1 -DUSE_AVX_INSTRUCTIONS=1 -DCUDA_HOST_COMPILER=/usr/bin/gcc-6
+$ cmake --build .
+
 ```
