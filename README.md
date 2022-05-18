@@ -9,7 +9,7 @@ $ sudo pip3 install face_recognition
 ```
 
 # 2. Check if CUDA suppored
-The dlib as is does not used CUDA lib. Some additional compiles is needed.
+The dlib as is does not use CUDA lib. Some additional compiles is needed.
 ```
 $ python3
 Python 3.8.10 (default, Jun  2 2021, 10:49:15) 
